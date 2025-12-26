@@ -213,13 +213,15 @@
         <span class="button__text">Сохранить на память</span>
       </button>
       <dialog id="dialog-id" class="dialog">
-        <svg class="dialog__icon" viewBox="0 0 28 28">
-          <use href="./svg/floppyy.svg#save-icon"></use>
-        </svg>
-        <span class="dialog__message">Вставьте дискету, чтобы продолжить</span>
-        <button class="button dialog__button" type="button" onclick="window['dialog-id'].close(); return false;">
-          <span class="button__text dialog__button-text">ок</span>
-        </button>
+        <form method="dialog">
+          <svg class="dialog__icon" viewBox="0 0 28 28">
+            <use href="./svg/floppyy.svg#save-icon"></use>
+          </svg>
+          <span class="dialog__message">Вставьте дискету, чтобы продолжить</span>
+          <button class="button dialog__button" type="button" onclick="window['dialog-id'].close(); return false;">
+            <span class="button__text dialog__button-text">ок</span>
+          </button>
+        </form>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
